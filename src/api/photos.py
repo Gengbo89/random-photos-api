@@ -1,6 +1,6 @@
 from flask import Blueprint, send_file, jsonify
 import random
-from ..utils.file_utils import get_all_photos
+from utils.file_utils import get_all_photos
 
 photos_bp = Blueprint('photos', __name__)
 

@@ -7,7 +7,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Install any necessary dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -i https://mirrors.aliyun.com/pypi/simple/ -r requirements.txt
 
 # Copy the source code into the container
 COPY src ./src
