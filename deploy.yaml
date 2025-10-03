@@ -29,6 +29,7 @@ spec:
       containers:
         - name: random-photos-api
           image: random-photos-api:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
           volumeMounts:
